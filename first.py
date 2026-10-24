@@ -3,7 +3,16 @@
 #مستقیم بیرون کلاس
 def identity():
     name=input("name:")
-    age=int(input("age:"))
+    while True:
+        try:
+            age=int(input("age:"))
+            if age <0:
+                print("age cannot be negative")
+            else:
+                break
+        except ValueError:
+            print("please enter a valid integer")
+        
     job=input("job:")
     city=input("city:")
     Info={
