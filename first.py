@@ -6,7 +6,7 @@ def identity():
     age=int(input("age:"))
     job=input("job:")
     city=input("city:")
-    Information={
+    Info={
         "name": name ,
         "age": age ,
         "job": job ,
@@ -16,7 +16,7 @@ def identity():
         print("not Eligible")
     else:
         print("eligible")
-    return Information
+    return Info
 result=identity()
 print(result)
 #درون کلاس
