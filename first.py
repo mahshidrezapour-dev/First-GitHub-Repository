@@ -1,8 +1,7 @@
 #اولین پروژه :
 #برنامه ای که نام و سن وشغل و شهر رو بگیره و داخل یک دیکشنری بریزه
 #مستقیم بیرون کلاس
-def identity():
-    name=input("name:")
+def get_age():
     while True:
         try:
             age=int(input("age:"))
@@ -13,6 +12,9 @@ def identity():
         except ValueError:
             print("please enter a valid integer")
         
+def identity():
+    name=input("name:")
+    age=get_age()
     job=input("job:")
     city=input("city:")
     Info={
@@ -32,7 +34,7 @@ print(result)
 class Information:
     def __init__(self):
         self.name=input("name:")
-        self.age=int(input("age:"))
+        self.age=get_age()
         self.job=input("job:")
         self.city=input("city:")
         if self.age <18:
